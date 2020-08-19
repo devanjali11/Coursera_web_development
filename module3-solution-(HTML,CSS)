@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Responsive Layout</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+<h1>Our Menu</h1>
+
+
+
+  <div class="col-lg-4 col-md-6 col-sm-12">
+  	<div class="box">
+  		<p class="content-name name1">Chicken</p>
+  		<p class="content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+  	</div>
+  </div>
+
+  <div class="col-lg-4 col-md-6 col-sm-12">
+  	<div class="box">
+   		<p class="content-name name2">Beef</p>
+   		<p class="content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+  	</div>
+  </div>
+
+  <div class="col-lg-4 col-md-12 col-sm-12">
+  	<div class="box">
+  		<p class="content-name name3">Sushi</p>
+  		<p class="content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+  	</div>	
+  </div>
+
+</body>
+</html>
+
+
+ (CSS)
+ 
+ 
+/********** Large devices only **********/
+@media (min-width: 992px) {
+  .col-lg-4 {
+  	float: left;
+    width: 33.33%;
+  }
+}
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-6,.col-md-12 {
+    float: left;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-12 {
+    margin-left: -10px;
+    width: 100%;
+  }
+  .name3{
+    margin-right: 65px;
+    width: 100px;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .col-sm-12 {
+  	float: left;
+    width: 100%;
+  }
+  .content-name{
+    margin-right: 30px;
+  }
+}
